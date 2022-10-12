@@ -1,0 +1,30 @@
+/* Fonts Import */
+@import url('../fonts/fonts.css');
+
+/* DataTables Import */
+@import url('../libs/Datatables/datatables.css');
+
+/* Custom CSS Import */
+@import url('./top-bar.css');
+@import url('./table.css');
+
+* {
+    /* Color Variables */
+    --color-dark-charcoal: #2F2F2B;
+    --color-dark-liver: #4E4E4E;
+    --color-bright-grey: #EAEAEA;
+    --color-quick-silver: #A5A5A5;
+    --color-black-chocolate: #191916;
+    --color-raisin-black: #242421;
+    --color-yellow-orange: #FF9402;
+    --color-white: #FFFFFF;
+    --color-dark-silver: #6F6F6F;
+    --color-purple: #A500CC;
+    --color-caribbean-green: #1ACC9C;
+    --color-red: #C60000;
+}
+
+body {
+    background: var(--color-dark-charcoal);
+    color: var(--color-bright-grey);
+}

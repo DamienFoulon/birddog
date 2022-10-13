@@ -48,12 +48,21 @@
 }
 
 .dataTables_wrapper > * {
-    color: var(--color-bright-grey) !important;
+    color: var(--color-bright-grey);
 }
 
 #camera_table tbody tr:hover {
     color: var(--color-dark-charcoal);
     background: linear-gradient(90deg, var(--color-bright-grey) 0%, var(--color-dark-charcoal) 100%);
+}
+
+#camera_table tbody .selected {
+    background: linear-gradient(90deg, var(--color-bright-grey) 0%, var(--color-dark-charcoal) 100%);
+}
+
+#camera_table tbody .selected > * {
+    color: var(--color-dark-charcoal);
+    box-shadow: none !important;
 }
 
 #camera_table tbody, #camera_table thead {
@@ -79,3 +88,20 @@
     font-size: 11px;
 }
 
+.rec::before {
+    content: "";
+    position: relative;
+    top: 0;
+    height: 2px;
+    width: 2px;
+    background: var(--color-red);
+}
+
+.rec::after {
+    content: "";
+    position: relative;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: var(--color-red);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "birddog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienFoulon/birddog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamienFoulon/birddog/issues"
+  },
+  "homepage": "https://github.com/DamienFoulon/birddog#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "sqlite3": "^5.1.2"
+  },
+  "description": ""
+}

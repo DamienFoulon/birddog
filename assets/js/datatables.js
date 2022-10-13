@@ -7,6 +7,11 @@ $(document).ready( function () {
 		info: false,
 		// Hide the navigation buttons
 		paging: false,
+		// Allow sorting on the first column only
+		columnDefs: [
+			{ orderable: true, targets: 0 },
+			{ orderable: false, targets: '_all' }
+		],
 	});
 	// push the search bar into table-controller
 	$('.dataTables_filter').appendTo('.table-controller');
@@ -16,4 +21,10 @@ $(document).ready( function () {
 	$('.dataTables_filter input').attr('placeholder', 'Recherche');
 	// push the entry counter into table-controller
 	$('.table-controller').append(`<div class="entry_counter"><p>Nombre d'entrées : <span>${table.data().length}</span></p></div>`);
+});
+
+// Toggle selected class on row click and add the rec icon close to the first name
+$('#camera_table tbody').on('click', 'tr', function () {
+	$(this).toggleClass('selected');
+	$(this).find('td:first-child').toggleClass('rec');
 });

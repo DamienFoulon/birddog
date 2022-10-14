@@ -30,7 +30,22 @@ let Database = {
             prenom: 'Damien',
         },
     },
+    /* Modèle de caméra 
+     -- Début
+        Nom de la Caméra: {
+            ip: "",
+            port: ,
+            preset: ,
+        },
+     -- Fin
+    */
 
+    /* Exemple pour la caméra Backup
+        Backup: {
+            ip: "Doe",
+            prenom: "John",
+        }, <-- virgule obligatoire
+    */
     cameras: {
         CameraExemple: {
             ip: "192.168.0.1",
@@ -152,7 +167,6 @@ const camera3 = new Cameras("Caméra 3","192.168.0.43", "5502", 99);
 camera1.addCamera();    
 camera2.addCamera();
 camera3.addCamera();
-console.log(camera1.getCameraList());
 
 member1.addActiveMember();
 member2.addActiveMember();

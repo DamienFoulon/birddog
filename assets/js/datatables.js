@@ -1,6 +1,7 @@
 $(document).ready( function () {
 	let table = $('#camera_table').DataTable({
-		language: { search: "" },
+		// Change de default text if the table is empty
+		language: { search: "", emptyTable: "Aucun membre actif" },
 		// Hide the table length select
 		lengthChange: false,
 		// Hide the table info
@@ -9,7 +10,7 @@ $(document).ready( function () {
 		paging: false,
 		// Allow sorting on the first column only
 		columnDefs: [
-			{ orderable: true, targets: 0 },
+			{ orderable: true, targets: 1 },
 			{ orderable: false, targets: '_all' }
 		],
 	});
@@ -26,5 +27,5 @@ $(document).ready( function () {
 // Toggle selected class on row click and add the rec icon close to the first name
 $('#camera_table tbody').on('click', 'tr', function () {
 	$(this).toggleClass('selected');
-	$(this).find('td:first-child').toggleClass('rec');
+	$(this).find('td:first-child .rec').toggleClass('visible');
 });

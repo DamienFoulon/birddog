@@ -28,3 +28,7 @@ body {
     background: var(--color-dark-charcoal);
     color: var(--color-bright-grey);
 }
+
+.visible {
+    display: block;
+}

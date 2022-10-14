@@ -88,20 +88,27 @@
     font-size: 11px;
 }
 
-.rec::before {
-    content: "";
-    position: relative;
-    top: 0;
-    height: 2px;
-    width: 2px;
-    background: var(--color-red);
+#camera_table tbody th:first-child {
+    width: 30px !important;
 }
 
-.rec::after {
-    content: "";
-    position: relative;
-    top: 0;
-    height: 20px;
-    width: 20px;
+.rec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 10px;
+    height: 10px;
     background: var(--color-red);
+    border-radius: 50%;
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+}
+
+.preset p {
+    width: fit-content;
+    padding: 5px;
+    margin: 0;
+    border: 2px solid var(--color-bright-grey);
 }
